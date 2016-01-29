@@ -2,25 +2,33 @@
 
 ## Scenario:
 
-A customer has an online, cloud document editing program. Their software records all of the changes that have happened to online documents. They would like us to analyse the changes metadata to identify user behaviours, and have given us a small sample file containing around 10,000 lines of JSON objects representing metadata.
+A customer has an online, cloud document editing program. Their software records all of the changes that have occurred to the online documents. They would like us to analyse the changes' metadata to identify user behaviors, and have given us a small sample file containing approximately 10,000 lines of JSON objects representing metadata for this purpose.
 
-Your task is to write a Java 1.8 program, built with Maven, to read and parse the JSON file, produce a filtered CSV file for our behaviour analytics team  to analyze, as well as aggregate and print out statistics at the end.
+Your task is to write a Java 1.8 program, built with Maven, to;
 
-Feel free to use any open source, public libraries to help you process the metadata. We suggest Jackson for JSON, Commons CSV for CSV, and Joda or Java DateTime for working with timestamps.
+1. read and parse the JSON file
+2. produce a filtered CSV file for our behaviour analytics team to analyze, and
+3. aggregate and print out statistics at the end.
 
-Your program should be runnable from a command prompt, should take two arguments, one for a JSON file to read, and one for a CSV file to write, and after completing, should print out the statistics to the console.
+You may use any open source, public libraries to help you process the metadata. We recommend Jackson for JSON, Commons CSV for CSV, and Joda or Java DateTime for working with timestamps.
 
-Your program should not be tied to any specific operating system. Try to keep the solution purely Java. You can deviate from this, but be prepared to justify.
+Your program should;
+
+1. be runnable from a command prompt,
+2. take two arguments: one for a JSON file to read and one for a CSV file to write, and
+3. after completion, print out the statistics to the console.
+
+Do not tie your program should not be tied to any one specific operating system. Keep the solution purely Java. If you feel the need to deviate from Java, explain your reasoning.
 
 Feel free to branch off of this GitHub repo to do your work. Email us when you feel that you are done, and we'll review.
 
-[The JSON Metadata](https://github.com/FileTrek/IntervieweeTasks/blob/master/Data-Integration-1/README.MD#the-json-metadata) section will outline what you should expect from the metadata file we’ve provided you with.
+[The JSON Metadata](https://github.com/FileTrek/IntervieweeTasks/blob/master/Data-Integration-1/README.MD#the-json-metadata) section will outline what you should expect from the metadata file we’ve provided to you.
 
-[The CSV File](https://github.com/FileTrek/IntervieweeTasks/blob/master/Data-Integration-1/README.MD#the-csv-file) section will cover the format we expect outputted.
+[The CSV File](https://github.com/FileTrek/IntervieweeTasks/blob/master/Data-Integration-1/README.MD#the-csv-file) section will cover the output format we expect.
 
-[The Metrics Output](https://github.com/FileTrek/IntervieweeTasks/blob/master/Data-Integration-1/README.MD#the-metrics-output) section will detail what we expected printed out to the console after the program has completed.
+[The Metrics Output](https://github.com/FileTrek/IntervieweeTasks/blob/master/Data-Integration-1/README.MD#the-metrics-output) section will detail what we expect printed out to the console after the program has completed.
 
-[Additional Assumptions You Can Make](https://github.com/FileTrek/IntervieweeTasks/blob/master/Data-Integration-1/README.MD#additional-assumptions-you-can-make) section lists some overall things to keep in mind as you work on this task.
+The [Additional Assumptions You Can Make](https://github.com/FileTrek/IntervieweeTasks/blob/master/Data-Integration-1/README.MD#additional-assumptions-you-can-make) section lists some general things to keep in mind as you work on this task.
 
 ## The JSON Metadata:
 
@@ -60,7 +68,7 @@ Sample:
     "timeOffset": "-05:00"
 }
 ```
-**Note:** The sample is written on multiple lines for readability, but will be on a single line with the given metadata file.
+**Note:** The sample above has been written on multiple lines for readability; in the metadata file provided, each JSON object will be on a single line.
 
 ## The CSV File ##
 
@@ -85,7 +93,7 @@ Action Mappings:
 |REMOVE|deletedDoc, deletedText, archived|
 |ACCESSED|viewDoc|
 
-Any valid metadata objects that fit at least one of the following criteria, should be dropped, and not included in the CSV file results.
+Any valid metadata objects that fit at least one of the following criteria should be dropped, and excluded from the CSV file results.
 - Any metadata objects with activity that is not mapped above.
 - Duplicate metadata objects, indicated by the event ID.
   - You only have to check the eventId. You do not have to compare the entire event.
@@ -124,7 +132,7 @@ Sample output:
 ```
 **Notes:**
 
-Other than “lines read”, and “event dropped”, dropped messages should not affect the other statistics.
+Other than “lines read” and “event dropped”, dropped messages should not affect the other statistics.
 
 The sample above does not contain the values we expect for the given data set, There may not be 23 users, or 256 files.
 
