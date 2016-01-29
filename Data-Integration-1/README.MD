@@ -14,13 +14,13 @@ Your program should not be tied to any specific operating system. Try to keep th
 
 Feel free to branch off of this GitHub repo to do your work. Email us when you feel that you are done, and we'll review.
 
-**The JSON Metadata** section will outline what you should expect from the metadata file we’ve provided you with.
+[The JSON Metadata](https://github.com/FileTrek/IntervieweeTasks/blob/master/Data-Integration-1/README.MD#the-json-metadata) section will outline what you should expect from the metadata file we’ve provided you with.
 
-**The CSV File** section will cover the format we expect outputted.
+[The CSV File](https://github.com/FileTrek/IntervieweeTasks/blob/master/Data-Integration-1/README.MD#the-csv-file) section will cover the format we expect outputted.
 
-**The Metrics Output** section will detail what we expected printed out to the console after the program has completed.
+[The Metrics Output](https://github.com/FileTrek/IntervieweeTasks/blob/master/Data-Integration-1/README.MD#the-metrics-output) section will detail what we expected printed out to the console after the program has completed.
 
-**Additional Assumptions You Can Make** section lists some overall things to keep in mind as you work on this task.
+[Additional Assumptions You Can Make](https://github.com/FileTrek/IntervieweeTasks/blob/master/Data-Integration-1/README.MD#additional-assumptions-you-can-make) section lists some overall things to keep in mind as you work on this task.
 
 ## The JSON Metadata:
 
@@ -131,7 +131,7 @@ The sample above does not contain the values we expect for the given data set, T
 ## Additional Assumptions You Can Make ##
 
 - Each line will always be valid JSON
-- Key:values in the metadata objects will always be present unless **The JSON Metadata** indicates otherwise.
-- Value type (Int, String) will always match the type listed in **The JSON Metadata** section.
-- If you encounter a metadata object you can't parse for reason not covered in **The CSV File**, do not include it in the CSV output.
+- Key:values in the metadata objects will always be present unless [The JSON Metadata](https://github.com/FileTrek/IntervieweeTasks/blob/master/Data-Integration-1/README.MD#the-json-metadata) section indicates otherwise.
+- Value type (Int, String) will always match the type listed in [The JSON Metadata](https://github.com/FileTrek/IntervieweeTasks/blob/master/Data-Integration-1/README.MD#the-json-metadata) section.
+- If you encounter a metadata object you can't parse for reasons not covered in [The CSV File](https://github.com/FileTrek/IntervieweeTasks/blob/master/Data-Integration-1/README.MD#the-csv-file), do not include it in the CSV output.
   - Print out an error, with a simple explanation
