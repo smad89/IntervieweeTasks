@@ -20,7 +20,7 @@ Your program should;
 
 Do not tie your program should not be tied to any one specific operating system. Keep the solution purely Java. If you feel the need to deviate from Java, explain your reasoning.
 
-Feel free to branch off of this GitHub repo to do your work. Email us when you feel that you are done, and we'll review.
+Feel free to fork this GitHub repo to do your work. When you feel that you are done, email us a link to your fork, and we'll review.
 
 [The JSON Metadata](https://github.com/FileTrek/IntervieweeTasks/blob/master/Data-Integration-1/README.MD#the-json-metadata) section will outline what you should expect from the metadata file we’ve provided to you.
 
