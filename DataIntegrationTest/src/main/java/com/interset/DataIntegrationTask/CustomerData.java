@@ -1,16 +1,21 @@
 package com.interset.DataIntegrationTask;
 
-public class CustomerData {
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class CustomerData extends HashMap<String, ArrayList<CustomerData>> {
 
 	//initialize your JSON parsed data
 	private Long eventID;
 	private String user, ipAddr, file, activity, timestamp, timeOffset;
+	private String fileName;
 	
 	
 	public Long getEventID() {
 		return eventID;
 	}
 	public void setEventID(Long eventID) {
+		
 		this.eventID = eventID;
 	}
 	public String getUser() {
@@ -31,6 +36,13 @@ public class CustomerData {
 	public void setFile(String file) {
 		this.file = file;
 	}
+	
+	public String getFileName() {
+		return fileName;
+	}
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
 	public String getActivity() {
 		return activity;
 	}
@@ -49,6 +61,7 @@ public class CustomerData {
 	public void setTimeOffset(String timeOffset) {
 		this.timeOffset = timeOffset;
 	}
+	
 
 	
 	
