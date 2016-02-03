@@ -54,8 +54,8 @@ public class TaskRunner {
 
     public static void parseJsonFileAndCreateCsvFile(Path jsonFile, Path csvFile) {
 
-        // TODO
-
+        //Initialize Jackon and Common CSV Objects
+    	
     }
 
 }
